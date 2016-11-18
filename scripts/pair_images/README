@@ -1,0 +1,32 @@
+System prerequisites
+
+	# Ubuntu/Debian
+	sudo apt-get install libjpeg-dev zlib1g-dev
+
+	# Mac OS X (via Homebrew)
+	brew install libjpeg zlib
+
+
+Installation of reportlab library
+
+1) globally for the OS
+
+	sudo pip install reportlab
+
+then it will be possible to run script as:
+
+	python createpdf.py /directory/path portrait
+
+
+2) using virtualenv
+
+	pip install virtualenv
+	cd /some/dir
+	virtualenv env
+	source ./env/bin/activate
+	pip install reportlab
+
+
+then it will be possible to run script as:
+
+	./env/bin/python createpdf.py /directory/path portrait
