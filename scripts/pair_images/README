@@ -17,10 +17,14 @@ then it will be possible to run script as:
 
 	python createpdf.py /directory/path portrait
 
+or
+
+	python createpdf.py /directory/path landscape
+
 
 2) using virtualenv
 
-	pip install virtualenv
+	sudo pip install virtualenv
 	cd /some/dir
 	virtualenv env
 	source ./env/bin/activate
@@ -30,3 +34,7 @@ then it will be possible to run script as:
 then it will be possible to run script as:
 
 	./env/bin/python createpdf.py /directory/path portrait
+
+or
+
+	./env/bin/python createpdf.py /directory/path landscape
